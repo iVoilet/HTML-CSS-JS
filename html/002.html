@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>002的测试（标签）</title>
+    </head>
+
+    <body>
+
+    <!--段落标签 <p></p> -->
+
+    有时候我们登录Mysql输入密码的时候，会出现这种情况
+    mysql -u root -p
+    Enter Password > ‘密码’
+    错误：ERROR 045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)
+    或者：错误：ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: NO)
+    二、解决办法
+
+    <p>有时候我们登录Mysql输入密码的时候，会出现这种情况</p>mysql -u root -p
+    Enter Password > ‘密码’
+    <p>错误：ERROR 045 (28000): Access denied for user ‘root’@‘localhost’ (using password: YES)
+    或者：错误：ERROR 1045 (28000): Access denied for user ‘root’@‘localhost’ (using password: NO)</p>
+    <p>二、解决办法</p>
+
+    <!--标题字<h1></h1>-->
+    <h1>标题字1</h1>
+    <h2>标题字2</h2>
+    <h3>标题字3</h3>
+    <h4>标题字4</h4>
+    <h5>标题字5</h5>
+    <h6>标题字6</h6>
+
+    <!--换行 <br>-->
+    <!--<br>是一个独目标记-->
+    hello
+    word
+    hello<br>world
+
+    <!--横线<hr>-->
+    <hr>
+    <!--color width都是hr标签的属性，而且引号有没有都可以-->
+    <hr color="red" width="50%">
+    <hr color=red width='50%'>
+
+    <!--预留格式<pre></pre>-->
+    <pre>
+        for(int i=0)
+        i++
+        else
+        ....
+    </pre>
+
+    <del>删除字</del>
+    <ins>插入字</ins>
+    <b>粗体字</b>
+    <i>斜体字</i>
+
+    10<sup>2</sup>
+    10<sub>m</sub>
+
+    <!--字体标签-->
+    <front color="red" size="50">字体的格式</front>
+
+    </body>
+</html>

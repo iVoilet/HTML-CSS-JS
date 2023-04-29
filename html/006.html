@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>006的测试（thead,tbody,tfoot）</title>
+</head>
+
+<body>
+<!--
+    注意事项
+    1、进行行合并 rowspan合并的时候，得删“下面”那个
+    2、进行列合并 colspan的时候，删哪个都可以
+-->
+
+
+<table border="1px" width="30%" height="100px" align="center">
+    <!--头-->
+    <thead>
+        <tr>
+            <th>员工编号</th>
+            <th>员工姓名</th>
+            <th>员工薪资</th>
+            <!--th标签也是单元格的标签。但是会自动居中和加粗-->
+        </tr>
+    </thead>
+    <!--体-->
+    <tbody>
+        <tr>
+            <td colspan="2">a</td>
+
+            <td>a</td>
+        </tr>
+    </tbody>
+    <!--脚-->
+    <tfoot>
+        <tr>
+            <td>b</td>
+            <td>b</td>
+            <td rowspan="2">b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>c</td>
+            <!--如果删上面那个会出现上面空的情况，所以删下面的这个-->
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

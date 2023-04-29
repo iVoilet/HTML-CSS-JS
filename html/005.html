@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>005的测试（单元格合并和th标签）</title>
+</head>
+
+<body>
+<!--
+    注意事项
+    1、进行行合并 rowspan合并的时候，得删“下面”那个
+    2、进行列合并 colspan的时候，删哪个都可以
+-->
+
+
+    <table border="1px" width="30%" height="100px" align="center">
+        <tr>
+            <th>员工编号</th>
+            <th>员工姓名</th>
+            <th>员工薪资</th>
+        <!--th标签也是单元格的标签。但是会自动居中和加粗-->
+        <tr>
+            <td colspan="2">a</td>
+
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>b</td>
+            <td rowspan="2">b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>c</td>
+            <!--如果删上面那个会出现上面空的情况，所以删下面的这个-->
+        </tr>
+    </table>
+
+</body>
+</html>

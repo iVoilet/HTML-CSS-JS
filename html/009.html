@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>009超链接</title>
+</head>
+<body>
+      <!--超链接的特点：
+            有下划线
+            鼠标停留再在超链接上显示小手形状
+            点击超链接之后能跳转页面
+      -->
+
+      <a href="https://www.baidu.com/">百度</a>
+
+      <a href="https://zh.moegirl.org.cn/%E7%88%B1%E8%8E%89%E5%B8%8C%E9%9B%85">爱莉希雅</a>
+
+      <!--href:hot references
+          href 属性后面一定是一个资源的地址
+
+          href后面的路劲可以是绝对路径，也可以是相对路径，也可以是网络中某个资源的路径
+       -->
+      <a href="008.html">007</a>
+
+      <!--图片超链接-->
+      <a href="https://zh.moegirl.org.cn/%E7%88%B1%E8%8E%89%E5%B8%8C%E9%9B%85">
+        <img src="背景图照片存储/爱莉希亚11.png" width="120px">
+      </a>
+
+      <!--超链接有一个target属性,放在的是href那里
+            可以取值：
+              _blank:新窗口
+              _self:当前窗口
+              _top:顶级窗口
+              _parent:父窗口
+      -->
+      <a href="https://zh.moegirl.org.cn/%E7%88%B1%E8%8E%89%E5%B8%8C%E9%9B%85" target="_blank">
+        <img src="背景图照片存储/爱莉希亚11.png" width="120px" >
+      </a>
+
+
+</body>
+</html>
+
+<!--
+        超链接的作用就是从浏览器向服务器发送请求（请求：request）
+        服务器向浏览器发送数据叫做响应（响应：response）
+
+        B/S结构的系统，每一个请求都会对应一个响应
+        B ----请求---->S
+        S ----响应---->B
+
+        用户点解超链接和用户在浏览器上面输入URL有什么区别？
+            本质上没有区别，都是向服务器发送请求
+
+        从操作上来看，都是向服务器发送请求
+-->

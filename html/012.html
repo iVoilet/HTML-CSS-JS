@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>012用户注册的表单</title>
+</head>
+<body>
+        <!--form表单method属性：
+          get:采用get方式提交的时候，用户提交的信息就会显示再浏览器的地址栏上
+          post：采用post方式提交的时候，用户提交的信息不会显示再浏览器地址栏上
+          当用户提交的信息中含有敏感信息，例如：密码，建议采用post方式提交
+
+          当method属性不指定，或者指定为get的时候属性才是get
+
+          post提交的数据格式仍然和get的一样，只不过不在地址栏显示出来
+          post提交的数据还是：name=value&name-value&name=value....
+        -->
+        <form action="http://locahost:8080/jd/regiseer" method="post">
+        用户名
+        <input type="test" name="username">
+        <br>
+        密码
+        <input type="password" name="userpsd">
+        <br>
+        确认密码
+        <input type="password">
+        <br>
+        性别
+        <!--这里使用一样的name，那么代表的是同一组，就只可以选择一个-->
+        <!--单选按钮的value必须手动指定！，最终提交给服务器端的是value，而非后面的男，女-->
+        <!--当有checked的时候，代表的是默认选这个。如果没有就没有默认的-->
+        <input type="radio" name="gender" value="1" checked>男
+        <input type="radio" name="gender" value="0">女
+        <br>
+        兴趣爱好
+        <input type="checkbox" name="interest" value="sing">唱
+        <input type="checkbox" name="interest" value="dance">跳
+        <input type="checkbox" name="interest" value="pap">rap
+        <input type="checkbox" name="interest" value="basketball">篮球
+        <br>
+        学历
+        <!--selected是默认选中。同上，提交其实是value的内容，而不是文本-->
+        <select name="grade">
+          <option value="gz">高中</option>
+          <option value="dz">大专</option>
+          <option value="bk" selected>本科</option>
+          <option value="sz">硕士</option>
+        </select>
+        <br>
+        简历<!--文本域  文本域没有value-->
+        <textarea rows="10" cols="60" name="introduce"></textarea>
+          <br>
+
+          <input type="submit" value="注册">
+          <input type="reset" value="清空">
+
+        </form>
+
+<!--超链接也可以提交数据给服务器,但是提交的数据都是固定不变的。
+    超链接是get型的请求，不是post请求
+-->
+        <a href="http://locahost:8080/oa/save?username=zhangsan&password=111">提交</a>>
+
+
+</body>
+</html>
+
+<!--这里是默认的形式
+  http://locahost:8080/jd/regiseer?username=jaca&userpsd=131&gender=1&interest=sing&interest=dance&interest=pap
+  &interest=basketball&grade=sz&introduce=%E6%88%91%E6%98%AF%E8%94%A1%E5%BE%90%E5%9D%A4
+-->

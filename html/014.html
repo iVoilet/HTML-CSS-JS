@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>014file控件和hidden</title>
+</head>
+<body>
+<!--file控件，文件上传专用-->
+  <input type="file">
+
+        <form action="http://localhost:8080/oa/save">
+            <!--隐藏域：网页上面看不到，但是表单提交的时候数据会自动提交给服务器-->
+            <!--注意它和method中post的区别。post是地址栏不显示而网页有
+                这里的hidden是网页上都看不到，如果加上post的话就会网页和地址栏都没有
+                hidden说白了只是网页上面不显示，但是会提交name和value
+            -->
+            <input type="hidden" name="userid" value="11">
+            用户代码<input type="text" name="usercode">
+            <input type="submit" value="提交">
+        </form>
+</body>
+</html>
